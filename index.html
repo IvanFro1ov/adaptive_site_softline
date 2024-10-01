@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>softline</title>
+    <link rel="stylesheet" href="src/styles/main.scss">
+    <link rel="icon" href="/vectors/favicon.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="/img/logo.png" alt="Логотип" class="header__logo" />
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">Облачные решения</li>
+          <li class="header__nav-item">Кибербезопасность</li>
+          <li class="header__nav-item">Импортозамещение</li>
+          <li class="header__nav-item">Цифровая трансформация</li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1 class="hero__title">
+        Поставщик услуг цифровой <br />
+        трансформации <br />
+        и кибербезопасности
+      </h1>
+      <a href="https://softline.ru" class="hero__link">На сайт</a>
+    </section>
+
+    <section class="about-us">
+      <div class="about-us__content">
+        <p>
+          <span class="about-us__content-highlight">Softline</span> – ведущий
+          поставщик IT-решений и сервисов.* <br class="paragraph" />Мы
+          предлагаем комплексные IT-решения, облака, программное
+          <br class="paragraph" />и аппаратное обеспечение, решения по цифровой
+          трансформации <br class="paragraph" />и кибербезопасности, а также
+          широкий спектр IT-услуг.
+        </p>
+      </div>
+      <ul class="advantages-list">
+        <li class="advantages-list__item years">
+          > 30 лет
+          <p class="advantages-list__description">на IT-рынке</p>
+        </li>
+        <li class="advantages-list__item worker">
+          4600
+          <p class="advantages-list__description">сотрудников в России</p>
+        </li>
+        <li class="advantages-list__item cities">
+          25
+          <p class="advantages-list__description">городов России</p>
+        </li>
+        <li class="advantages-list__item dev">
+          2000 +
+          <p class="advantages-list__description">разработчиков</p>
+        </li>
+        <li class="advantages-list__item learn">
+          3000 +
+          <p class="advantages-list__description">
+            сотрудников ежегодно <br />проходят оценку и обучение
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <div class="backdrop"></div>
+
+    <section class="officies">
+      <div class="officies__list">
+        <p class="officies__title">
+          Офисы Softline
+          <img src="vectors/bottom-arrow.svg" alt="стрелка вниз" />
+        </p>
+        <ul class="regions">
+          <li data-region="all">Все</li>
+          <li data-region="moscow">Москва</li>
+          <li data-region="center">Центр</li>
+          <li data-region="north-west">Северо-Запад</li>
+          <li data-region="south">Юг</li>
+          <li data-region="volga">Волга</li>
+          <li data-region="ural">Урал</li>
+          <li data-region="siberia">Сибирь</li>
+          <li data-region="far-east">Дальний Восток</li>
+        </ul>
+        <nav class="officies__dropdown">
+          <ul class="regions_full">
+            <li>Москва</li>
+            <li>
+              Центр
+              <ul class="regions_full-cities">
+                <li>Воронеж</li>
+                <li>Ярославль</li>
+                <li>Белгород</li>
+              </ul>
+            </li>
+            <li>
+              Северо-Запад
+              <ul class="regions_full-cities">
+                <li>Санкт-Петербург</li>
+                <li>Калининград</li>
+              </ul>
+            </li>
+            <li>
+              Юг
+              <ul class="regions_full-cities">
+                <li>Ростов-на-Дону</li>
+                <li>Краснодар</li>
+                <li>Волгоград</li>
+              </ul>
+            </li>
+            <li>
+              Волга
+              <ul class="regions_full-cities">
+                <li>Казань</li>
+                <li>Самара</li>
+                <li>Уфа</li>
+                <li>Оренбург</li>
+                <li>Нижний Новгород</li>
+              </ul>
+            </li>
+            <li>
+              Урал
+              <ul class="regions_full-cities">
+                <li>Екатеринбург</li>
+                <li>Челябинск</li>
+                <li>Пермь</li>
+                <li>Сургут</li>
+                <li>Тюмень</li>
+                <li>Ижевск</li>
+              </ul>
+            </li>
+
+            <li>
+              Сибирь
+              <ul class="regions_full-cities">
+                <li>Новосибирск</li>
+                <li>Омск</li>
+                <li>Томск</li>
+                <li>Красноярск</li>
+                <li>Иркутск</li>
+              </ul>
+            </li>
+            <li>
+              Дальний Восток
+              <ul class="regions_full-cities">
+                <li>Хабаровск</li>
+                <li>Владивосток</li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="map-container">
+        <img src="/img/map.png" alt="Карта России" class="map" />
+        <div class="locations">
+          <div
+            class="location"
+            data-region="moscow"
+            style="top: 37.5%; left: 10.1%; font-size: 14px"
+          >
+            Москва
+          </div>
+          <div
+            class="location"
+            data-region="center"
+            style="top: 41.4%; left: 5.95%"
+          >
+            Воронеж
+          </div>
+          <div
+            class="location"
+            data-region="center"
+            style="top: 33.2%; left: 12.7%"
+          >
+            Ярославль
+          </div>
+          <div
+            class="location"
+            data-region="center"
+            style="top: 46.45%; left: 5.5%"
+          >
+            Белгород
+          </div>
+          <div
+            class="location"
+            data-region="north-west"
+            style="top: 22.59%; left: 8.13%; font-size: 16px"
+          >
+            Санкт-Петербург
+          </div>
+          <div
+            class="location"
+            data-region="north-west"
+            style="top: 21.39%; left: 0.43%"
+          >
+            Калининград
+          </div>
+          <div
+            class="location"
+            data-region="south"
+            style="top: 63.2%; left: 1.54%; font-size: 15px"
+          >
+            Краснодар
+          </div>
+          <div
+            class="location"
+            data-region="south"
+            style="top: 53.3%; left: 3%; font-size: 15px"
+          >
+            Ростов-на-Дону
+          </div>
+          <div
+            class="location"
+            data-region="south"
+            style="top: 60.31%; left: 6.85%"
+          >
+            Волгоград
+          </div>
+          <div
+            class="location"
+            data-region="volga"
+            style="top: 50%; left: 19.4%"
+          >
+            Казань
+          </div>
+          <div
+            class="location"
+            data-region="volga"
+            style="top: 51.3%; left: 14.1%"
+          >
+            Самара
+          </div>
+          <div
+            class="location"
+            data-region="volga"
+            style="top: 56.3%; left: 20.4%"
+          >
+            Уфа
+          </div>
+          <div
+            class="location"
+            data-region="volga"
+            style="top: 60.97%; left: 16.42%"
+          >
+            Оренбург
+          </div>
+          <div
+            class="location"
+            data-region="volga"
+            style="top: 43.7%; left: 13.5%"
+          >
+            Н. Новгород
+          </div>
+          <div class="location" data-region="ural" style="top: 55%; left: 24%">
+            Екатеринбург
+          </div>
+          <div
+            class="location"
+            data-region="ural"
+            style="top: 60.7%; left: 24.4%"
+          >
+            Челябинск
+          </div>
+          <div
+            class="location"
+            data-region="ural"
+            style="top: 50.2%; left: 30.45%"
+          >
+            Пермь
+          </div>
+          <div
+            class="location"
+            data-region="ural"
+            style="top: 52.1%; left: 34.98%"
+          >
+            Сургут
+          </div>
+          <div
+            class="location"
+            data-region="ural"
+            style="top: 60.8%; left: 32.9%"
+          >
+            Тюмень
+          </div>
+          <div
+            class="location"
+            data-region="ural"
+            style="top: 48.5%; left: 25.8%"
+          >
+            Ижевск
+          </div>
+          <div
+            class="location"
+            data-region="siberia"
+            style="top: 75.6%; left: 40.08%"
+          >
+            Новосибирск
+          </div>
+          <div
+            class="location"
+            data-region="siberia"
+            style="top: 79%; left: 37.4%"
+          >
+            Омск
+          </div>
+          <div
+            class="location location--reverse"
+            data-region="siberia"
+            style="top: 72%; left: 47.25%"
+          >
+            Томск
+          </div>
+          <div
+            class="location"
+            data-region="siberia"
+            style="top: 76%; left: 50.75%"
+          >
+            Красноярск
+          </div>
+          <div
+            class="location"
+            data-region="siberia"
+            style="top: 81.5%; left: 56.25%"
+          >
+            Иркутск
+          </div>
+          <div
+            class="location location--reverse"
+            data-region="far-east"
+            style="top: 77.75%; left: 80%; font-size: 15px"
+          >
+            Хабаровск
+          </div>
+          <div
+            class="location"
+            data-region="far-east"
+            style="top: 95%; left: 78.5%; font-size: 15px"
+          >
+            Владивосток
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mission">
+      <h1 class="mission__title">Миссия Softline</h1>
+      <p class="mission__description">
+        Мы помогаем организациям трансформироваться, работать эффективно и
+        безопасно в условиях цифровой экономики.
+      </p>
+    </section>
+
+    <section class="business-line">
+      <h1 class="business-line__title">Направления бизнеса</h1>
+      <ul class="business-line__list">
+        <li class="business-line__list__item">
+          <p class="business-line__list__item-text">
+            Решения Softline
+            <span class="business-line__list__item-description">
+              <br />ГК Softline предлагает клиентам собственную линейку
+              оборудования <br />(ПК, серверы, торговое оборудование и проч.),
+              разработку <br />программных продуктов, облачных решений, решений
+              в области <br />информационной безопасности.
+            </span>
+          </p>
+        </li>
+        <li class="business-line__list__item">
+          <p class="business-line__list__item-text">
+            Кибербезопасность
+            <span class="business-line__list__item-description">
+              <br />Softline обладает всеми необходимыми государственными
+              лицензиями <br />для организации проектов по информационной
+              безопасности <br />и аттестации.
+            </span>
+          </p>
+        </li>
+        <li class="business-line__list__item">
+          <p class="business-line__list__item-text">
+            Импортозамещение
+            <span class="business-line__list__item-description">
+              <br />ГК Softline обладает широчайшим портфелем решений и услуг
+              для импортозамещения, включая ПО и оборудование собственного<br />
+              производства.
+            </span>
+          </p>
+        </li>
+        <li class="business-line__list__item">
+          <p class="business-line__list__item-text">
+            Облачные решения
+            <span class="business-line__list__item-description">
+              <br />Softline использует современные облачные решения как
+              российских, <br />так и международных вендоров для масштабирования
+              бизнеса своих <br />клиентов. Подписки, услуги, трансформация.
+            </span>
+          </p>
+        </li>
+        <li class="business-line__list__item">
+          <p class="business-line__list__item-text">
+            Цифровая трансформация<br />
+            и разработка ПО
+            <span class="business-line__list__item-description">
+              <br />Softline использует современные технологи и новые
+              возможности для <br />увеличения производительности бизнеса
+              заказчика. В штате ГК Softline<br />
+              - 2000+ разработчиков, которые трансформируют ПО под нужды<br />
+              конкретного предприятия.
+            </span>
+          </p>
+        </li>
+        <li class="business-line__list__item">
+          <p class="business-line__list__item-text">
+            Техническая поддержка Softline
+            <span class="business-line__list__item-description">
+              <br />200+ инженеров, 24 часа в сутки, 7 дней в неделю, 12 месяцев
+              в году,<br />
+              сервисное партнерство с 30+ мировыми производителями.
+            </span>
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="bonus">
+      <h1 class="bonus__title">Компенсационный пакет</h1>
+      <ul class="bonus__list">
+        <li class="bonus__list-item">
+          <span class="bonus__icon">
+            <img src="/vectors/dms.svg" alt="DMS Icon" />
+          </span>
+          <span class="bonus__text">ДМС</span>
+        </li>
+        <li class="bonus__list-item">
+          <span class="bonus__icon">
+            <img src="/vectors/birthday.svg" alt="Birthday Icon" />
+          </span>
+          <span class="bonus__text">Выходной <br />в день рождения</span>
+        </li>
+        <li class="bonus__list-item">
+          <span class="bonus__icon">
+            <img src="/vectors/mobile.svg" alt="Mobile Icon" />
+          </span>
+          <span class="bonus__text">Корпоративная мобильная связь</span>
+        </li>
+        <li class="bonus__list-item">
+          <span class="bonus__icon">
+            <img src="/vectors/sport.svg" alt="Sport Icon" />
+          </span>
+          <span class="bonus__text">Корпоративные скидки на спорт</span>
+        </li>
+        <li class="bonus__list-item">
+          <span class="bonus__icon">
+            <img src="/vectors/lti.svg" alt="Sport Icon" />
+          </span>
+          <span class="bonus__text">LTI</span>
+        </li>
+      </ul>
+      <div class="bonus__separator"></div>
+      <h2 class="bonus__subtitle">
+        Программа дополнительной мотивации <br />
+        <span class="bonus__subtitle-highlight">доплата 12% от суммы</span>
+      </h2>
+      <ul class="bonus__list2">
+        <li class="bonus__list-item">
+          <span class="bonus__icon">
+            <img src="/vectors/technic.svg" alt="Technic Icon" />
+          </span>
+          <span class="bonus__text">Оргтехники</span>
+        </li>
+        <li class="bonus__list-item">
+          <span class="bonus__icon">
+            <img src="/vectors/dms.svg" alt="DMS Icon" />
+          </span>
+          <span class="bonus__text">ДМС</span>
+        </li>
+        <li class="bonus__list-item">
+          <span class="bonus__icon">
+            <img src="/vectors/house.svg" alt="House Icon" />
+          </span>
+          <span class="bonus__text">Ипотеки</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="corporate-life">
+      <div class="corporate-life__container">
+        <h1 class="corporate-life__title">Корпоративная жизнь</h1>
+        <div class="corporate-life__buttons">
+          <button class="corporate-life__button corporate-life__button--left">
+            <img src="/vectors/left-arrow.svg" alt="кнопка влево" />
+          </button>
+          <button class="corporate-life__button corporate-life__button--right">
+            <img src="/vectors/right-arrow.svg" alt="кнопка вправо" />
+          </button>
+        </div>
+      </div>
+
+      <div class="corporate-life__slider">
+        <div class="corporate-life__slides">
+          <img
+            src="/img/slider/slide1.jpg"
+            alt="Slide 1"
+            class="corporate-life__slide corporate-life__slide--active"
+          />
+          <img
+            src="/img/slider/slide2.jpg"
+            alt="Slide 2"
+            class="corporate-life__slide"
+          />
+          <img
+            src="/img/slider/slide3.jpg"
+            alt="Slide 3"
+            class="corporate-life__slide"
+          />
+          <img
+            src="/img/slider/slide4.jpg"
+            alt="Slide 4"
+            class="corporate-life__slide"
+          />
+          <img
+            src="/img/slider/slide5.jpg"
+            alt="Slide 5"
+            class="corporate-life__slide"
+          />
+        </div>
+        <div class="corporate-life__controls">
+          <button
+            class="corporate-life__control corporate-life__control--active"
+            data-index="0"
+          ></button>
+          <button class="corporate-life__control" data-index="1"></button>
+          <button class="corporate-life__control" data-index="2"></button>
+          <button class="corporate-life__control" data-index="3"></button>
+          <button class="corporate-life__control" data-index="4"></button>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="/src/js/main.js"></script>
+    <script type="module" src="/src/js/officies.js"></script>
+    <script type="module" src="/src/js/click.js"></script>
+  </body>
+</html>

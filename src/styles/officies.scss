@@ -1,0 +1,237 @@
+.officies {
+  width: 1250px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 100px;
+  position: relative;
+  z-index: 15;
+}
+
+.officies__list {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  box-shadow: 0px 0px 40px 0px #0000000f;
+  position: relative;
+  z-index: 15;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.officies__title {
+  width: 185px;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.officies__title img {
+  margin-left: 16px;
+}
+
+.officies__dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.officies__dropdown.show {
+  display: block;
+}
+
+.map-container {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 90px;
+  width: 100%;
+  max-width: 1190px;
+}
+
+.map {
+  width: 100%;
+  height: auto;
+}
+
+.locations {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.location {
+  font-weight: 600;
+  font-size: 13px;
+  position: absolute;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+.location::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.location.show {
+  display: block;
+  opacity: 1;
+}
+
+.location--reverse::before {
+  top: 22px !important;
+}
+
+.backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 5;
+}
+
+.backdrop.show {
+  display: block;
+}
+
+.regions {
+  width: auto;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.regions li {
+  padding-top: 30px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  cursor: pointer;
+  margin-right: 30px;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.3s;
+}
+
+.regions li:last-child {
+  margin-right: 0;
+}
+
+.regions li.active {
+  border-bottom: 3px solid #a30c33;
+  color: #a30c33;
+}
+
+.regions li:hover {
+  border-bottom: 3px solid #ccc;
+}
+
+.regions_full {
+  display: flex;
+  justify-content: space-between;
+  width: 1113px;
+  height: 212px;
+  margin: 30px auto;
+  padding: 0;
+  list-style: none;
+}
+
+.regions_full li {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.regions_full-cities {
+  padding: 0;
+  list-style: none;
+}
+
+.regions_full-cities li {
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Стили для экранов 425px и меньше */
+@media (max-width: 425px) {
+  .officies__list {
+    display: flex;
+    flex-direction: row; /* Элементы будут располагаться в столбец */
+    align-items: flex-start; /* Выравниваем элементы по левому краю */
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .officies__dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Элементы внутри списка в столбик */
+    height: auto;
+  }
+
+  .officies__dropdown ul li {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    border-bottom: 1px solid #f0f0f0;
+    width: 100%; /* Элемент занимает всю ширину */
+  }
+
+  .officies__dropdown ul li:hover {
+    background-color: #f5f5f5;
+  }
+
+  .officies__dropdown ul li .regions_full-cities {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Скрываем по умолчанию */
+  }
+
+  .officies__dropdown ul li .regions_full-cities.show {
+    display: block; /* Показываем, если класс show присутствует */
+  }
+
+  .officies__dropdown ul li .regions_full-cities li {
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .officies__dropdown ul li img {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

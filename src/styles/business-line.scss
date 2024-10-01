@@ -1,0 +1,171 @@
+.business-line {
+  max-width: 1250px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 100px;
+
+  &__title {
+    display: block;
+    max-width: 482px;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 56px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 615px);
+    grid-template-rows: repeat(3, 260px);
+    column-gap: 20px;
+    row-gap: 22px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &__item {
+      position: relative;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: flex-end;
+
+      // Задаем фоновое изображение для каждого элемента списка
+      &:nth-child(1) {
+        background-image: url("/img/solutions.jpg");
+      }
+
+      &:nth-child(2) {
+        background-image: url("/img/cybersecurity.jpg");
+      }
+
+      &:nth-child(3) {
+        background-image: url("/img/import.jpg");
+      }
+
+      &:nth-child(4) {
+        background-image: url("/img/cloud.jpg");
+      }
+
+      &:nth-child(5) {
+        background-image: url("/img/softwareDev.jpg");
+      }
+
+      &:nth-child(6) {
+        background-image: url("/img/support.jpg");
+      }
+
+      // Эффект наведения: текст выезжает вверх, дополнительный текст появляется
+      &:hover .business-line__list__item-text {
+        height: 100%;
+        transition: height 0.3s ease; /* Плавный переход высоты */
+      }
+
+      &:hover .business-line__list__item-description {
+        opacity: 1; /* Делаем дополнительный текст видимым */
+        transition: opacity 0.3s ease;
+      }
+    }
+
+    &__item-text {
+      width: 100%;
+      box-sizing: border-box;
+      min-height: 80px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 24px;
+      color: #ffffff;
+      background-color: rgba(45, 54, 83, 0.6);
+      padding: 28px 20px;
+      margin: 0;
+      position: relative;
+      z-index: 1;
+      transition: transform 0.3s ease;
+    }
+
+    &__item-description {
+      position: absolute; /* Изменяем на absolute */
+      left: 0;
+      right: 0;
+      color: white;
+      padding: 20px;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 23.8px;
+      text-align: left;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      opacity: 0; /* Изначально невидим */
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .business-line {
+    max-width: 900px;
+  }
+  .business-line__list {
+    grid-template-columns: repeat(2, 440px);
+  }
+}
+
+@media (max-width: 768px) {
+  .business-line {
+    max-width: 600px;
+    margin-top: 50px;
+
+    &__title {
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
+
+  .business-line__list {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 260px);
+  }
+}
+
+@media (max-width: 425px) {
+  .business-line {
+    max-width: 350px;
+
+    &__title {
+      font-size: 28px;
+      line-height: 28px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  }
+
+  .business-line__list {
+    display: block;
+  }
+  .business-line__list__item {
+    margin-bottom: 10px;
+  }
+  .business-line__list__item {
+    overflow: hidden; /* Скрываем дополнительный текст */
+    transition: height 0.3s ease; /* Плавный переход высоты */
+    cursor: pointer; /* Курсор для клика */
+  }
+
+  .business-line__list__item.expanded {
+    height: 240px; /* Высота при раскрытии */
+  }
+
+  .business-line__list__item-description {
+    display: none; /* Скрываем дополнительный текст изначально */
+  }
+
+  .business-line__list__item.expanded .business-line__list__item-description {
+    display: block; /* Показываем дополнительный текст при раскрытии */
+  }
+}
+
+@media (max-width: 375px) {
+  .business-line {
+    max-width: 300px;
+  }
+}

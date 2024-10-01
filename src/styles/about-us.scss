@@ -1,0 +1,161 @@
+.about-us__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 1110px;
+  height: 352px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.4px;
+  box-shadow: 0px 0px 32px 0px #00000014;
+  box-sizing: border-box;
+  margin-top: 100px;
+  padding: 100px 110px;
+  white-space: normal;
+
+  p {
+    margin: 0;
+  }
+
+  &-highlight {
+    color: #b01736;
+  }
+}
+
+.advantages-list {
+  display: grid;
+  grid-template-columns: 428px 1fr 1fr;
+  grid-template-rows: 112px 112px;
+  grid-template-areas:
+    "years worker cities"
+    "dev learn learn";
+
+  row-gap: 63px;
+  max-width: 889px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 64px;
+    color: #a30c33;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #444444;
+    margin: 0;
+    padding: 0;
+  }
+
+  .years {
+    grid-area: years;
+  }
+  .worker {
+    grid-area: worker;
+  }
+  .cities {
+    grid-area: cities;
+    margin-left: auto;
+  }
+  .dev {
+    grid-area: dev;
+    margin-left: 147px;
+  }
+  .learn {
+    grid-area: learn;
+    margin-left: 108px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-us__content {
+    max-width: 900px;
+  }
+  .paragraph {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us__content {
+    max-width: 600px;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 5px 24px;
+  }
+
+  .advantages-list {
+    max-width: 600px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 112px 112px 112px;
+    grid-template-areas:
+      "years worker"
+      "cities dev"
+      "learn learn";
+
+    row-gap: 24px;
+
+    &__item {
+      font-size: 80px;
+      line-height: 64px;
+    }
+
+    &__description {
+      font-size: 18px;
+      line-height: 20px;
+      text-align: center;
+    }
+
+    .cities {
+      margin: 0 auto;
+    }
+    .dev {
+      margin: 0 auto;
+    }
+    .learn {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .about-us {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .about-us__content {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .advantages-list__item {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .about-us {
+    max-width: 300px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+
+  .about-us__content {
+    max-width: 300px;
+    margin: 0;
+  }
+}

@@ -1,0 +1,32 @@
+@import "header";
+@import "hero";
+@import "about-us";
+@import "mission";
+@import "business-line";
+@import "bonus";
+@import "сorporate-life";
+@import "officies";
+
+
+@font-face {
+  font-family: "ProximaNovaCondensed";
+  src: url("../fonts/proximanovacond_regular.ttf") format("truetype"),
+    url("../fonts/proximanovacond_bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/proximanova_regular.ttf") format("truetype");
+}
+
+body {
+  font-family: ProximaNovaCondensed;
+  margin: 0;
+  padding: 0;
+  color: #444444;
+  background-color: #ffff;
+}
+
+.officies .regions_full {
+  font-family: "ProximaNova", sans-serif;
+}
